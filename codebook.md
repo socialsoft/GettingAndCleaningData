@@ -1,12 +1,4 @@
-##Description 
-
-Describes the variables, the data, and any transformations or work that you performed to clean up the data
-
-##Assumption
-
-It is assumed that the Samsung data is unzipped into the working directory. The data therefore resides in the same folder as run_analysis.R
-
-##Source
+##Data Source
 
 Source of the original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
@@ -38,7 +30,7 @@ This uses melt function for transposing the data. Then uses dcast function to ca
 
 The result is saved as tidy_dataset.txt, a 180x68 data frame. There are 30 subjects and 6 activities, thus 180 rows in this dataset.
 
-#### tidy_data.txt contains the following variables:
+##D.Variables Description in tidy_data.txt
 * subject -- The Id of each subject        
 * activity
   * walking
@@ -113,4 +105,4 @@ The result is saved as tidy_dataset.txt, a 180x68 data frame. There are 30 subje
   * fbodybodygyromag-mean
   * fbodybodygyromag-std
   * fbodybodygyrojerkmag-mean
-  * fbodybodygyrojerkmag-std  * 
+  * fbodybodygyrojerkmag-std
